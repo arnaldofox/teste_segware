@@ -56,14 +56,14 @@ public class PostController {
         return postModelBO.save(post);
     }
 
-    @PutMapping("/upVote/{id}")
+    @GetMapping("/upVote/{id}")
     @ApiOperation(value = "Adicionar um UP voto")
     public ResponseEntity<PostModel> upVote(@PathVariable(value = "id") Long postId) throws ResourceNotFoundException {
 
         return ResponseEntity.ok(postModelBO.upVote(postId, WebUtils.getIP(request)));
     }
 
-    @PutMapping("/downVote/{id}")
+    @GetMapping("/downVote/{id}")
     @ApiOperation(value = "Adicionar um DOWN voto")
     public ResponseEntity<PostModel> downVote(@PathVariable(value = "id") Long postId) throws ResourceNotFoundException {
 
