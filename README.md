@@ -4,9 +4,9 @@ Desenvolva uma aplicação onde textos possam ser postados de forma livre e, est
 
 A aplicação precisa permitir:
 
-•	Listar os posts atuais e seus “upvotes”;
-•	Adicionar um novo post;
-•	Adicionar um “upvote” a um post.
+- Listar os posts atuais e seus "upvotes";
+- Adicionar um novo post;
+- Adicionar um "upvote" a um post.
 
 
 ## Tecnologias
