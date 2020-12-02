@@ -10,7 +10,7 @@ A aplicação precisa permitir:
 
 
 ## Tecnologias
-Projeto Backend em JAVA usando Spring Boot, usando base de dados H2.
+Projeto Backend em JAVA 8 usando Spring Boot, usando base de dados H2.
 
 ## Executar 
 java -jar segware-0.0.1-SNAPSHOT.jar
