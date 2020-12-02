@@ -13,6 +13,7 @@ import com.segware.repository.UpDownVotesRepository;
 import org.springframework.util.StringUtils;
 
 /**
+ * Classe de regra de negócio para manipular o Post
  *
  * @author Arnaldo
  */
@@ -60,9 +61,9 @@ public class PostModelBO {
             throw new ResourceNotFoundException("Descrição do Post é obrigatório");
         }
 
-        if (post.getDescricao().length() > 1200) {
-            throw new ResourceNotFoundException("Post permitido com tamanho máximo de 1200 caracteres");
-        }
+//        if (post.getDescricao().length() > 1200) {
+//            throw new ResourceNotFoundException("Post permitido com tamanho máximo de 1200 caracteres");
+//        }
 
         post.setDataHora(new Date());
         

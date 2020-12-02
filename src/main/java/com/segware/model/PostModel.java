@@ -14,7 +14,6 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.persistence.Transient;
 import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.Size;
 
 /**
  * Classe modelo PostModel que presenta uma Entidade na base dados
@@ -31,7 +30,6 @@ public class PostModel implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Size(max = 1200, message = "Post com o máximo de 1200 caracteres")
     @NotBlank(message = "Descrição é obrigatório")
     @Column(columnDefinition = "text")
     private String descricao;
