@@ -38,15 +38,13 @@ class SegwareApplicationTests {
         HttpEntity<String> entity = new HttpEntity<>(null, headers);
 
         ResponseEntity<String> response = restTemplate.exchange(getRootUrl() + "/api/v1/posts", HttpMethod.GET, entity, String.class);
-
         assertNotNull(response.getBody());
     }
 
     @Test
     public void testGetPostById() {
-        int id = 4;
+        int id = 1;
         PostModel post = restTemplate.getForObject(getRootUrl() + "/api/v1/post/" + id, PostModel.class);
-        System.out.println(post.getDescricao());
         assertNotNull(post.getDescricao());
     }
 
@@ -62,17 +60,15 @@ class SegwareApplicationTests {
 
     @Test
     public void testUpVotePost() {
-        int id = 4;
+        int id = 1;
         PostModel post = restTemplate.getForObject(getRootUrl() + "/api/v1/upVote/" + id, PostModel.class);
-        System.out.println(post.getUpVote());
         assertNotNull(post.getUpVote());
     }
 
     @Test
     public void testDownVotePost() {
-        int id = 4;
+        int id = 1;
         PostModel post = restTemplate.getForObject(getRootUrl() + "/api/v1/downVote/" + id, PostModel.class);
-        System.out.println(post.getUpVote());
         assertNotNull(post.getDownVote());
     }
 
