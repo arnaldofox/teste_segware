@@ -16,7 +16,6 @@ import org.springframework.web.bind.annotation.RestController;
 import com.segware.utils.WebUtils;
 import io.swagger.annotations.ApiOperation;
 import javax.servlet.http.HttpServletRequest;
-import org.springframework.web.bind.annotation.PutMapping;
 
 /**
  * Controlador dos Recursos da API
